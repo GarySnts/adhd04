@@ -1,7 +1,7 @@
 "use strict";
 const inputBase = document.getElementById("numBase");
 const inputAltura = document.getElementById("numAltura");
-const verResultado = document.getElementById("resultado");
+const verResultado2 = document.getElementById("resultado");
 let base = 0;
 let altura = 0;
 function recibirValores2() {
@@ -15,10 +15,11 @@ function recibirValores2() {
 }
 function areaTriangulo() {
     if (recibirValores2() == 100) {
-        verResultado.textContent = "Los valores son incorrectos, verifique que sean números positivos";
+        verResultado2.textContent = "Los valores son incorrectos, verifique que sean números positivos";
     }
     else {
         const area = (base * altura) / 2;
-        verResultado.textContent = "El area deñl triangulo es: " + area;
+        verResultado2.textContent = "El area deñl triangulo es: " + area + " cm al cuadrado";
     }
 }
+//llamar con un onClick en html
